@@ -36,10 +36,12 @@ canvas{
 .gameapp{
     transition:3s;
     opacity:0;
+    display:none;
 }
 
 .see-gameapp{
     opacity:1;
+    display:flex;
 }
 
 

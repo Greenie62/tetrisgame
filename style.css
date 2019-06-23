@@ -131,13 +131,13 @@ canvas{
     color:white;
     text-transform:uppercase;
     letter-spacing:8px;
-    transform:translateY(-300px);
+    transform:translateY(0px);
     transition:3s;
 
 }
 
 .bye-playerbox{
-    transform:translateY(100px);
+    transform:translateY(400px);
 }
 
 

@@ -167,6 +167,11 @@ canvas{
 }
 
 
-
+@media screen and (max-width:768px){
+    .controller{
+        transform:translateY(75px);
+      
+    }
+}
 
 

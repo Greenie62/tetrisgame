@@ -166,6 +166,13 @@ canvas{
     transform:translateY(-425px)
 }
 
+.small-screen-score{
+    margin-top:10px;
+    display:none;
+    text-transform:uppercase;
+    letter-spacing:7px;
+}
+
 
 @media screen and (max-width:768px){
     .playerbox{display:none}
@@ -175,8 +182,21 @@ canvas{
     .game-header{
         display:none;
     }
+
+    .controller{
+        margin-top:10px;
+    }
     i{
         margin-left:15px;
+    }
+
+    .score{
+         position:relative;
+        
+    }
+
+    .small-screen-score{
+        display:block;
     }
 
 }

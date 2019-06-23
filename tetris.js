@@ -4,6 +4,7 @@ var playerbox=document.querySelector(".playerbox");
 var loader=document.querySelector('.load-container');
 var score=0;
 var scoreDOM=document.querySelector("#score");
+var smallscoreDOM=document.querySelector(".small-screen-score-span")
 var scoreboard=document.querySelector(".scoreboard")
 scoreboard.style.transition=1.5;
 scoreboard.style.opacity=0;
@@ -212,6 +213,7 @@ function tetrisPlay(){
             ++y;
             score+=100;
             scoreDOM.innerHTML=score;
+            smallscoreDOM.innerHTML=score;
             explosion.play()
         }
     }
@@ -317,7 +319,8 @@ function tetrisPlay(){
         }
         arena.forEach(row=>row.fill(0))
         score=0;
-        scoreDOM=score;
+        scoreDOM.innerHTML=score;
+        smallscoreDOM.innerHTML=score;
     }
 }
 

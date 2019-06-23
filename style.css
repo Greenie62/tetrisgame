@@ -35,7 +35,7 @@ canvas{
 
 .gameapp{
     transition:3s;
-    opacity:.2;
+    opacity:0;
 }
 
 .see-gameapp{

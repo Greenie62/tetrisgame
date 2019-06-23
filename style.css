@@ -9,6 +9,14 @@ body{
     background:linear-gradient(#666,#888,#999)
 }
 
+canvas{
+    pointer-events:none
+}
+
+.controller{
+    z-index:1;
+}
+
 .app-container{
     display:flex;
     flex-direction:column;

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href="style.css">
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <title>Tetris</title>
+</head>
+<body>
+    <div class='app-container'>
+    <div class='gameapp'>
+        <div class='game-header'>
+        <h1>TETRIS</h1>
+        <h4>Score:<span id='score'>0</span></h4>
+        <h4><span id='player'></span></h4>
+    </div>
+        <canvas id='tetris' width="240px" height="400px"></canvas>
+        <div class='controller'>
+                <i class="fas fa-arrow-left left"></i>
+                <i class="fas fa-arrow-down down"></i>
+                <i class="fas fa-arrow-right right"></i>
+                <i class="fas fa-undo rotate-left"></i>
+                <i class="fas fa-sync rotate-right"></i>
+                
+        </div>
+    </div>
+    
+    <div class='load-container'>
+    <div class='loader'>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <p class='loadermessage'>Loading</p>
+    </div>
+
+    <div class='playerbox'>
+        <h3>Who Dares Challenge?</h3>
+        <label for="player">Challenger:</label>
+        <input type='text' id='player' name='player' placeholder="gamer_name_here" autocomplete="off">
+        <button class='play-btn'>Play</button>
+    </div>
+    </div>
+
+    <div class='scoreboard'>
+        <h2>HIGH SCORES:</h2>
+        <ul id='scoreboard'></ul>
+    </div>
+
+  
+
+    <script src="tetris.js"></script>
+</body>
+</html>

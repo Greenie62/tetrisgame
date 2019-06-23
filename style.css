@@ -1,0 +1,159 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background:linear-gradient(#666,#888,#999)
+}
+
+.app-container{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    width:100%;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.gameapp, .playerbox, .load-container, .game-header{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.gameapp{
+    transition:3s;
+    opacity:.2;
+}
+
+.see-gameapp{
+    opacity:1;
+}
+
+
+/* LOADER ANIMATION LOGIC */
+
+.load-container{
+    display:none;
+    transform:translateY(-250px);
+  
+
+}
+
+.loader{
+    position:relative;
+    animation:rotate 3s linear infinite;
+}
+
+.loadermessage{
+    font-size:20px;
+    display:flex;
+    position:relative;
+  
+}
+
+.loadermessage::after{
+    animation:dots steps(4, end) 3s infinite;
+    overflow:hidden;
+    width:0px; 
+   content:'\2026';
+
+}
+
+@keyframes dots{
+    to{
+        width:1.25em;
+    }
+}
+
+.circle{
+    height:85px;
+    width:85px;
+    border-radius:50%;
+    background:red;
+    margin-bottom:10px;
+    animation:grow 3s linear infinite;
+    transform:scale(0)
+}
+
+.circle:nth-child(1){
+    background:blue;
+    animation-delay:1s;
+}
+
+@keyframes rotate{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes grow{
+    50%{
+        transform:scale(1)
+    }
+    100%{}
+}
+
+/* ANIMATION/LOADER END */
+
+.game-header{
+    background:linear-gradient(blue,darkblue);
+    color:white;
+    width:550px;
+    height:100px;
+    text-transform:uppercase;
+    letter-spacing:8px;
+    margin-bottom:15px;
+}
+
+
+
+
+.playerbox{
+    width:50%;
+    margin:auto;
+    height:400px;
+    background:linear-gradient(blue,darkblue);
+    color:white;
+    text-transform:uppercase;
+    letter-spacing:8px;
+    transform:translateY(-300px);
+    transition:3s;
+
+}
+
+.bye-playerbox{
+    transform:translateY(100px);
+}
+
+
+.playerbox > input{
+    transition:1s;
+    height:20px;
+    width:150px;
+}
+
+.playerbox > input:hover{
+    transform:scale(1.3)
+}
+
+.playerbox > button{
+    height:20px;
+    width:85px;
+    transition:1s;
+    cursor:pointer;
+}
+
+.playerbox > button:hover{
+    background:lightblue;
+}
+
+.scoreboard{
+    width:30%;
+    margin-left:auto;
+    transform:translateY(-425px)
+}

@@ -1,4 +1,5 @@
 var gameapp=document.querySelector(".gameapp");
+var gameheader=document.querySelector(".game-header")
 var playerbox=document.querySelector(".playerbox");
 var loader=document.querySelector('.load-container');
 var score=0;
@@ -343,3 +344,5 @@ rotateRight.addEventListener("click",()=>{
 
 
 }
+
+tetrisPlay()

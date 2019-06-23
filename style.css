@@ -168,9 +168,12 @@ canvas{
 
 
 @media screen and (max-width:768px){
-    .controller{
-        transform:translateY(75px);
-      
+    .playerbox{display:none}
+    .gameapp{
+        opacity:1;
+    }
+    .game-header{
+        display:none;
     }
     i{
         margin-left:15px;
